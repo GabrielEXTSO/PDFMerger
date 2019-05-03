@@ -1,29 +1,15 @@
 {
-    "name": "gabrielextso/pdfmerger",
-    "description": "PDFMerger for PHP (PHP 5 and up to PHP 7.1 Compatible)",
+    "name": "gabrielextso/pdf-merger",
+    "description": "PDF File Merger for PHP5",
     "authors": [
-    	{
-    		"name":"Jarrod Nettles",
-    		"email": "jarrod@squarecrow.com"
-    	},
-    	{
-    		"name":"Vasiliy Zaytsev",
-    		"email":"vasiliy.zaytsev@ffwagency.com"
-    	},
-    	{
-    		"name":"Myo Kyaw Htun",
-    		"email":"myochauhtun@gmail.com"
-    	}
+        {
+            "name": "Paul Clegg",
+            "email": "paul@clegginabox.co.uk"
+        }
     ],
-    "require":{
-    	"php": ">=5.2.0"
-    },
-    "minimum-stability":"dev",
-    "autoload":{
-    	"psr-4":{
-			"classmap": [
-    			"PDFMerger.php"
-			]
-    	}
+    "autoload": {
+        "classmap": [
+            "src/PDFMerger/PDFMerger.php"
+        ]
     }
 }
