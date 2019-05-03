@@ -1,5 +1,5 @@
 {
-    "name": "myokyawhtun/pdfmerger",
+    "name": "gabrielextso/pdfmerger",
     "description": "PDFMerger for PHP (PHP 5 and up to PHP 7.1 Compatible)",
     "authors": [
     	{
@@ -20,8 +20,10 @@
     },
     "minimum-stability":"dev",
     "autoload":{
-    	"psr-0":{
-    		"PDFMerger": "PDFMerger.php"
+    	"psr-4":{
+			"classmap": [
+    			"PDFMerger": "PDFMerger.php"
+			]
     	}
     }
 }
