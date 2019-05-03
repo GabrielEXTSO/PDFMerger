@@ -7,6 +7,9 @@
             "email": "paul@clegginabox.co.uk"
         }
     ],
+    "require":{
+    	"php": ">=5.2.0"
+    },
     "autoload": {
         "classmap": [
             "src/PDFMerger/PDFMerger.php"
