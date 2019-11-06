@@ -34,6 +34,8 @@
  */
 namespace Clegginabox\PDFMerger;
 
+use Exception;
+
 class PDFMerger
 {
 	private $_files;	//['form.pdf']  ["1,2,4, 5-19"]
@@ -68,7 +70,7 @@ class PDFMerger
 		}
 		else
 		{
-			throw new exception("Could not locate PDF on '$filepath'");
+			throw new Exception("Could not locate PDF on '$filepath'");
 		}
 
 		return $this;
@@ -143,7 +145,7 @@ class PDFMerger
 			}
 			else
 			{
-				throw new exception("Error outputting PDF to '$outputmode'.");
+				throw new Exception("Error outputting PDF to '$outputmode'.");
 				return false;
 			}
 		}
@@ -198,7 +200,7 @@ class PDFMerger
 				$x = $ind[0]; //start page
 				$y = $ind[1]; //end page
 
-				if($x > $y): throw new exception("Starting page, '$x' is greater than ending page '$y'."); return false; endif;
+				if($x > $y): throw new Exception("Starting page, '$x' is greater than ending page '$y'."); return false; endif;
 
 				//add middle pages
 				while($x <= $y): $newpages[] = (int) $x; $x++; endwhile;
